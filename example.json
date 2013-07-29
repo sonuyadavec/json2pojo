@@ -1,48 +1,258 @@
 {
-  "example_id": "2342342",
-  "status": "approved",
-  "created": "2011-11-01T14:20:33",
-  "modified": "2011-11-01T14:20:33",
-  "contact_details":{
-    "name": "Thomas A. Anderson",
-    "phone": "074544544"
-  },
-  "payment": {
-    "currency_code": "USD",
-    "payment_outstanding": 0.0,
-    "nett_amount": 444.0
-  },
-  "order_items": [
-    {
-      "id": 6323440,
-      "items": [
-        {
-          "advertised_amount": 222.0,
-          "nett_amount": 200.0,
-          "item_name": "widget 1",
-          "description":  "widget 1 description"
-        }
-        
-      ]
-    }
-      
-    ]
-  ,
-
-  "internal_information": {
-    "email":"blahblah@somewhere.com",
-    "links":  [
-        {"href":"/example/2342342/comments", "rel":"comment", "group":"private"}
-        ],    
-    "payment_details": [{
-      "card":{"masked_card": "411111XXXXXX1234", "card_name": "Mr. Anderson", "bin": "411111"},
-      "voucher":{"voucher_id": "24242342", "name":"Agent Smith"}
-    }]
-  },
-
-  "links": [
-    {"href":"/example/2342342", "rel":"example", "group":"public"}  
-  ]
-    
+  "inPlayServiceUrl": "/inplayServiceController",
+	"inPlayLandingUrl": "/inplaylanding",
+	"isInplayAccordion": true,
+	"inPlayshowMoreSportsUrl": "/service/inplay-data-json.php?showMore=OTHER",
+	"inPlayshowMoreSportsLabel": "Show 3 More Sports",
+	"totalInplayEvents": 37,
+	"inplaySports": [{
+		"name": "All Sports",		
+		"value": "ALL"
+	}, {
+		"name": "Football",
+		"value": "football"
+	}, {
+		"name": "Tennis",
+		"value": "tennis"
+	}, {
+		"name": "Cricket",
+		"value": "cricket"
+	}, {
+		"name": "BasketBall",
+		"value": "basketball"
+	}, {
+		"name": "Ice Hockey",
+		"value": "icehockey"
+	}],
+	"inplayItems": [{
+		"totalEvents": "5",
+		"isExpanded": true,
+		"seeAllLinkPresent": false,
+		"displayOrder": 1,
+		"label": "Football",
+		"className": "football",
+		"showMoreLabel": "Show 2 More",
+		"showMoreUrl": "/service/inplay-data-json.php?showMore=football",
+		"events": [{
+			"id": "217324308",
+			"status": "Active",
+			"displayStatus":"Displayed",
+			"name": "Manu Vs Chelsea",
+			"teamAName": "Manchester United",
+			"teamBName": "Chelsea",
+			"score": {
+				"teamAScore": 0,
+				"teamBScore": 2
+			},
+			"isInPlay": true,
+			"displayOrder": "1",
+			"typeName": "Friendlies",
+			"seoUrl": "/P2120-1-football-event-pre.php",
+			"marketId": "249734444",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "Win-Draw-Win",
+			"marketsCount": "19",
+			"selections": [{
+				"selectionId": "394857",
+				"displayOrder": "1",
+				"price": "5/6",
+				"previousPrice": "9/16"
+			}, {
+				"selectionId": "394852",
+				"displayOrder": "2",
+				"price": "5/16",
+				"previousPrice": "9/16"
+			}, {
+				"selectionId": "39485222",
+				"displayOrder": "3",
+				"price": "5/60",
+				"previousPrice": "9/16"
+			}],
+			"favURL": "service/favourites.php?id=217324308&status=off"
+		}, {
+			"id": "217324307",
+			"status": "Suspended",
+			"displayStatus":"Displayed",
+			"name": "FC Illychivets Mariupol (Res) v FC Zorya Luhansk (Res)",
+			"isInPlay": false,
+			"displayOrder": "2",
+			"typeName": "Friendlies",
+			"seoUrl": "/P2120-1-football-event-pre.php/-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "249734449",
+			"marketStatus": "Suspended",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "generic",
+			"marketsCount": "16",
+			"favURL": "service/favourites.php?id=217324307&status=off"
+		},{
+			"id": "2173243072",
+			"status": "Active",
+			"displayStatus":"Displayed",
+			"name": "FC Barcelona 3-0 Inter Milan",
+			"isInPlay": true,
+			"displayOrder": "3",
+			"typeName": "Friendlies",
+			"seoUrl": "/P2120-1-football-event-pre.php/-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "249734449",
+			"marketStatus": "Suspended",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "generic",
+			"marketsCount": "16",
+			"favURL": "service/favourites.php?id=217324307&status=off"
+		}]
+	}, {
+		"totalEvents": "15",
+		"isExpanded": true,
+		"seeAllLinkPresent": true,
+		"displayOrder": 2,
+		"label": "Tennis",
+		"className": "tennis",
+		"showMoreLabel": "Show 12 More",
+		"showMoreUrl": "/service/inplay-data-json.php?showMore=tennis",
+		"events": [{
+			"id": "217324309",
+			"name": "Andy Murry Vs Novak Djokovic",
+			"teamAName": "Andy Murry",
+			"teamBName": "Novak Djokovic",
+			"status":"Active",
+			"displayStatus":"Displayed",
+			"score": {
+				"teamAServing": false,
+				"teamBServing": true,
+				"totalNumberofSets": 5,
+				"teamASetScore": "6",
+				"teamBSetScore": "4",
+				"teamAGameScore": "3",
+				"teamBGameScore": "1",
+				"teamAPointScore": "40",
+				"teamBPointScore": "ADV"
+			},
+			"isInPlay": true,
+			"displayOrder": "1",
+			"typeName": "Wimbeldon",
+			"seoUrl": "/P2120-1-tennis-event-pre.php/-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "2497348",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "Win-Win",
+			"marketsCount": "13",
+			"selections": [{
+				"selectionId": "2472248867",
+				"displayOrder": "1",
+				"price": "5/6",
+				"status": "Active",
+				"previousPrice": "9/16"
+			}, {
+				"selectionId": "363473247",
+				"displayOrder": "3",
+				"price": "5/60",
+				"status": "Suspended"
+				
+			}],
+			"favURL": "service/favourites.php?id=217324309&status=off"
+		}, {
+			"id": "217324310",
+			"name": "Nadal (0) 5 0-40 3 (1) *Federrer",
+			"teamAName": "Rafel Nadal",
+			"teamBName": "Roger Federrer",
+			"isInPlay": true,
+			"displayOrder": "2",
+			"status":"Active",
+			"displayStatus":"Displayed",
+			"typeName": "Wimbeldon",
+			"seoUrl": "/Tennis/Wimbeldon/NadalVsFederrer-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "2497340",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "generic",
+			"marketsCount": "23",
+			"favURL": "service/favourites.php?id=217324310&status=off"
+		},
+		{
+			"id": "517324310",
+			"name": "Nadaldian (0) 5 0-40 3 (1) *Rederereer",
+			"teamAName": "Rafel Nadaldian",
+			"teamBName": "Radaldian Rederereer",
+			"isInPlay": true,
+			"displayOrder": "3",
+			"status":"Active",
+			"displayStatus":"Displayed",
+			"typeName": "Wimbeldon",
+			"seoUrl": "/Tennis/Wimbeldon/NadalVsFederrer-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "5173243102",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "generic",
+			"marketsCount": "2",
+			"favURL": "service/favourites.php?id=517324310&status=off"
+		}]
+	}, {
+		"totalEvents": "5",
+		"isExpanded": false,
+		"seeAllLinkPresent": false,
+		"displayOrder": 4,
+		"label": "Ice Hockey",
+		"className": "icehockey",
+		"showMoreLabel": "Show 1 More",
+		"showMoreUrl": "/service/inplay-data-json.php?showMore=icehockey",
+		"events": [{
+			"id": "217324388",
+			"status":"Active",
+			"displayStatus":"Displayed",
+			"name": "Canada 12-7 USA",
+			"isInPlay": false,
+			"displayOrder": "5",
+			"teamAName": "Canada",
+			"teamBName": "USA",
+			"score": {
+				"teamAScore": 12,
+				"teamBScore": 7
+			},
+			"typeName": "Championship ICE",
+			"seoUrl": "/IceHockey/ChampionshipICE/CanadaVsUSA-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "2497399",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "Win-Win",
+			"marketsCount": "10",
+			"selections": [{
+				"selectionId": "363473247",
+				"displayOrder": "1",
+				"price": "5/6",
+				"previousPrice": "9/16"
+			}, {
+				"selectionId": "394857",
+				"displayOrder": "2",
+				"price": "5/16",
+				"previousPrice": "9/16"
+			}],
+			"favURL": "service/favourites.php?id=2497399&status=off"
+		}]
+	}, {
+		"totalEvents": "15",
+		"isExpanded": true,
+		"seeAllLinkPresent": false,
+		"displayOrder": 2,
+		"label": "BasketBall",
+		"className": "basketball",
+		"showMoreLabel": "Show 14 More",
+		"showMoreUrl": "/service/inplay-data-json.php?showMore=basketball",
+		"events": [{
+			"id": "217324388",
+			"status":"Active",
+			"displayStatus":"Displayed",
+			"name": "Miami Heat 78-70 Sanantonio Spurs",
+			"isInPlay": true,
+			"displayOrder": "6",
+			"typeName": "NBA",
+			"seoUrl": "/BasketBall/NBA/HeatVsSpurs-1z141nbZ1z13um1Z1z0v213/",
+			"marketId": "2497388",
+			"marketStatus": "Active",
+			"marketDisplayStatus": "Displayed",
+			"marketTemplate": "generic",
+			"marketsCount": "10"
+		}],
+		"favURL": "service/favourites.php?id=217324308&status=off"
+	}]
 }
-
